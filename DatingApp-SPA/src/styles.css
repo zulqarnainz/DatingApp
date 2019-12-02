@@ -39,13 +39,20 @@ body {
 }
 
 .member-tabset > .nav-tabs > li.active {
-  border-bottom: 4px solid #e95420;
+  /* border-bottom: 4px solid #e95420; */
+  border-bottom: 4px solid #772953;  
   position: relative;
+}
+
+.member-tabset > .nav-tabs > li > a.nav-link {
+  /* border-bottom: 4px solid #e95420; */
+  color:  #772953; 
 }
 
 .member-tabset > .nav-tabs > li.active > a {
   border: 0 !important;
-  color: #333333;
+  /* color: #333333; */
+  color: #e95420;
 }
 
 .member-tabset > .nav-tabs > li.active > a > i {
