@@ -41,6 +41,7 @@ import { MemberCardComponent } from "./members/member-card/member-card.component
 import { MemberDetailComponent } from "./members/member-detail/member-detail.component";
 import { MemberEditComponent } from "./members/member-edit/member-edit.component";
 import { PhotoEditorComponent } from "./members/photo-editor/photo-editor.component";
+import { TimeAgoPipe } from "time-ago-pipe";
 
 // Routes
 import { appRoutes } from "./routes";
@@ -69,7 +70,8 @@ export class CustomHammerConfig extends HammerGestureConfig {
     MemberCardComponent,
     MemberDetailComponent,
     MemberEditComponent,
-    PhotoEditorComponent
+    PhotoEditorComponent,
+    TimeAgoPipe
   ],
   imports: [
     BrowserModule,
