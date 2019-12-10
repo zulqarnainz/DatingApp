@@ -1,0 +1,18 @@
+ul.pagination {
+  color: #772953;
+  background: #772953;
+}
+
+.page-link {
+  /* border-bottom: 4px solid #e95420; */
+
+  color: #772953;
+  background: #772953;
+}
+
+.page-item.active .page-link{
+    z-index: 1;
+    color: #772953;
+    background-color: #772953;
+    border-color: #772953;
+}

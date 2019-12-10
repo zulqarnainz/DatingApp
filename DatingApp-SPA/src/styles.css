@@ -67,3 +67,18 @@ body {
   border-top: 1px solid #eee;
   padding: 15px 0;
 }
+
+
+.page-link {
+  /* border-bottom: 4px solid #e95420; */
+
+  color: #772953;
+  /* background: #772953; */
+}
+
+.page-item.active .page-link{
+    z-index: 1;
+    color: #fff;
+    background-color: #772953;
+    border-color: #772953;
+}
