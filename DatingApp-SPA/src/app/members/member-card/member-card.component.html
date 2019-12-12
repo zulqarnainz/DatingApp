@@ -16,7 +16,9 @@
         </button>
       </li>
       <li class="list-inline-item">
-        <button class="btn btn-danger"><i class="fa fa-heart"></i></button>
+        <button class="btn btn-danger" (click)="sendLike(user.id)">
+          <i class="fa fa-heart"></i>
+        </button>
       </li>
       <li class="list-inline-item">
         <button class="btn btn-success"><i class="fa fa-envelope"></i></button>

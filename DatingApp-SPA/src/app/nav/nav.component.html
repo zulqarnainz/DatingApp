@@ -1,6 +1,13 @@
 <nav class="navbar navbar-expand-md navbar-dark  bg-dark">
   <div class="container">
-    <a class="navbar-brand" [routerLink]="['/home']">Dating App</a>
+    <img
+      src="../../favicon.ico"
+      style="border: none; font-size: xx-large;"
+      alt="LoveLink"
+    />
+    <a class="navbar-brand" style="font-size: x-large;" [routerLink]="['/home']"
+      >LoveLink</a
+    >
 
     <ul *ngIf="loggedIn()" class="navbar-nav mr-auto">
       <li class="nav-item " routerLinkActive="active">
@@ -16,7 +23,7 @@
 
     <div class="dropdown" *ngIf="loggedIn()" dropdown>
       <span class="mr-1">
-        <img src="{{ photoUrl || '../../../../../assets/user.png'}}" alt="" />
+        <img src="{{ photoUrl || '../../../../../assets/user.png' }}" alt="" />
       </span>
       <a class=" dropdown-toggle text-light" dropdownToggle>
         Welcome {{ authService.decodedToken?.unique_name | titlecase }}

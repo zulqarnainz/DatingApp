@@ -20,7 +20,7 @@ import { NgxGalleryModule } from "ngx-gallery";
 import { FileUploadModule } from "ng2-file-upload";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-// Services
+// Services - services/ guards / resolvers
 import { AuthService } from "./_services/auth.service";
 import { ErrorInterceptorProvider } from "./_services/error.interceptor";
 import { AlertifyService } from "./_services/alertify.service";
@@ -30,6 +30,7 @@ import { UserService } from "./_services/user.service";
 import { MemberDetailResolver } from "./_resolvers/member-detail.resolver";
 import { MemberListResolver } from "./_resolvers/member-list.resolver";
 import { MemberEditResolver } from "./_resolvers/member-edit.resolver";
+import { ListsResolver } from "./_resolvers/lists.resolver";
 
 // Components
 import { AppComponent } from "./app.component";
@@ -106,6 +107,7 @@ export class CustomHammerConfig extends HammerGestureConfig {
     MemberDetailResolver,
     MemberListResolver,
     MemberEditResolver,
+    ListsResolver,
     PreventUnsavedChanges,
     { provide: HAMMER_GESTURE_CONFIG, useClass: CustomHammerConfig }
   ],
